@@ -10,7 +10,7 @@ def color_quantization(img, k=8):
     result = result.reshape(img.shape)
     return result
 
-img = cv2.imread('Cat.jpeg')  
+img = cv2.imread('Night.JPG')  
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 edges_canny = cv2.Canny(gray, threshold1=200, threshold2=200)

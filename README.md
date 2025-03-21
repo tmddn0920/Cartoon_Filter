@@ -20,3 +20,30 @@
 | Original | Cartoon |
 |----------|---------|
 | ![Original](./Demo_Image/Cat_Original.png) | ![Cartoon](./Demo_Image/Cat_Cartoon.png) |
+
+### ✅ 잘 표현된 예시
+- **설명**: 배경 색상이 밝고, 색상이 고르게 분할되어 있으며 윤곽선이 선명한 이미지
+
+| Original | Cartoon |
+|----------|---------|
+| ![Original](./Demo_Image/Pokemon_Original.png) | ![Cartoon](./Demo_Image/Pokemon_Cartoon.png) |
+
+| Original | Cartoon |
+|----------|---------|
+| ![Original](./Demo_Image/Nature_Original.png) | ![Cartoon](./Demo_Image/Nature_Cartoon.png) |
+
+### ❌ 잘 표현되지 않는 예시
+- **설명**: 배경이 어둡고 복잡하여 윤곽선을 잘 검출할 수 없는 이미지
+
+| Original | Cartoon |
+|----------|---------|
+| ![Original](./Demo_Image/Night_Original.png) | ![Cartoon](./Demo_Image/Night_Cartoon.png) |
+
+---
+
+## ⚠️ 알고리즘의 한계
+
+1. **배경이 어두운 이미지**의 경우 Canny 엣지에서 윤곽선 검출이 어려움
+2. 색상 단순화(K-means)는 이미지 크기가 클 경우 계산 비용이 높음
+3. 윤곽선이 너무 많거나 복잡하면 만화 스타일이 아니라 **노이즈처럼 보일 수 있음**
+4. 인물 사진처럼 **디테일이 중요한 경우**, 윤곽선이 디테일을 뭉개는 경우가 있음
